@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fb_width">238dp</dimen>
+    <dimen name="fb_height">173dp</dimen>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WhetherRestaurant">
+
+    <TextView
+        android:id="@+id/button_r"
+        android:layout_width="275dp"
+        android:layout_height="124dp"
+        android:layout_alignEnd="@+id/dialogue"
+        android:layout_below="@+id/dialogue"
+        android:layout_marginEnd="209dp"
+        android:background="@drawable/button_health"
+        android:gravity="center"
+        android:text="否"
+        android:textSize="40sp"
+        tools:layout_editor_absoluteX="480dp"
+        tools:layout_editor_absoluteY="302dp" />
+
+    <TextView
+        android:id="@+id/dialogue"
+        android:layout_width="1000dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/speak"
+        android:layout_marginStart="45dp"
+        android:layout_toEndOf="@+id/speak"
+        android:background="@drawable/dialogue"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="78dp" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/speak"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/speak"
+
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/button_l"
+        android:layout_width="275dp"
+        android:layout_height="124dp"
+        android:layout_below="@+id/dialogue"
+        android:layout_marginEnd="31dp"
+        android:layout_toStartOf="@+id/button_r"
+        android:background="@drawable/button_health"
+        android:gravity="center"
+        android:text="是"
+        android:textSize="40sp"
+        tools:layout_editor_absoluteX="338dp"
+        tools:layout_editor_absoluteY="302dp" />
+
+</RelativeLayout>

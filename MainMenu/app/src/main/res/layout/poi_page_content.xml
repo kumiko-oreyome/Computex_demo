@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="1008dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/info_box"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+
+        <ImageView
+            android:id="@+id/ivPageViewItem"
+            android:layout_width="350dp"
+            android:layout_height="450dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="25dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/maxresdefault" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="450dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="0.16"
+            android:orientation="vertical">
+            <!-- Rating -->
+            <LinearLayout
+                android:id="@+id/layoutPageViewRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/heart" />
+
+                <TextView
+                    android:id="@+id/tvPageViewRating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="4.1"
+                    android:textSize="30dp" />
+
+            </LinearLayout>
+
+            <!-- Ttitle -->
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvPageViewTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_column="0"
+
+                        android:layout_row="0"
+                        android:text="餐廳名稱"
+                        android:textSize="40sp" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="start"
+                    app:srcCompat="@color/bgcolor" />
+
+                <TextView
+                    android:id="@+id/tvPageViewDetailInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+
+                    android:scrollbars="vertical"
+                    android:text="Detail Information"
+                    android:textSize="20sp" />
+                <!--android:gravity="bottom"-->
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="450dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvPageViewType1"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_box"
+                    android:text="類型1"
+                    android:textAlignment="center"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/tvPageViewType2"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_box"
+                    android:text="類型2"
+                    android:textAlignment="center"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/tvPageViewType3"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_box"
+                    android:text="類型3"
+                    android:textAlignment="center"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnMoreInfo"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_gravity="left"
+            android:background="@drawable/button_box"
+            android:text="更多資訊"
+            android:textColor="?attr/colorControlNormal"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/button_box"
+            android:text="離開"
+            android:textColor="?attr/colorControlNormal"
+            android:textSize="30sp" />
+    </LinearLayout>
+</LinearLayout>

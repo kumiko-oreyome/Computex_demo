@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Computex2</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_brief_info">briefInfo</string>
+    <string name="permission_message">This app needs to record audio and recognize your speech.</string>
+    <string name="answer">answer</string>
+    <string name="next">next</string>
+    <!-- Weather start -->
+    <string name="hint">請輸入</string>
+    <string name="date_tag">dateTag</string>
+    <!-- units -->
+    <string name="unit_temp">°c</string>
+    <string name="unit_humidity">%</string>
+    <string name="unit_pressure"> 百帕</string>
+    <string name="unit_wind"> km/h</string>
+    <string name="unit_visibility"> 公里</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="greeting">你好!</string>
+    <string name="toNextBtn">下一頁</string>
+    <string name="sleep_status">昨晚睡得好嗎?</string>
+    <string name="good">好</string>
+    <string name="notgood">不好</string>
+    <string name="sleep_quality">那你昨天的睡眠品質如何</string>
+    <string name="bad">差</string>
+    <string name="awful">很差</string>
+    <string name="when_sleep">你昨晚幾點睡阿?</string>
+    <string name="when_wake">那你今天幾點起床的呀?</string>
+    <string name="coffein">你是不是喝含咖啡因的飲料?</string>
+    <string name="when_drink">你有印象幾點喝的嗎?</string>
+    <string name="book_recommendation">現在時間還早，我想去看書了!有需要我推薦幾本不錯的書給你嗎?</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="read_news">還是我幫你讀幾則重點新聞呢?</string>
+    <string name="restaurant_recommendation">那麼快到用餐時間了，推薦你幾家不錯的餐廳</string>
+    <string name="site_recommendation">附近有很多不錯的景點與活動，要幫你推薦幾個嗎?</string>
+    <!-- Weather end -->
+</resources>

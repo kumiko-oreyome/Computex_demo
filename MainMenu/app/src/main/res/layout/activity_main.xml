@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    tools:context="com.ncku.iir.computex.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:columnCount="3"
+                android:rowCount="2"
+                android:useDefaultMargins="true">
+
+                <ImageButton
+                    android:id="@+id/weatherButton"
+                    android:layout_width="330dp"
+                    android:layout_height="330dp"
+                    android:layout_column="0"
+                    android:layout_gravity="center"
+                    android:layout_row="0"
+                    android:background="@color/bgcolor"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/main_weather_main_icon" />
+
+
+                <ImageButton
+                    android:id="@+id/testingButton"
+                    android:layout_width="330dp"
+                    android:layout_height="330dp"
+                    android:layout_column="1"
+                    android:layout_gravity="center"
+                    android:layout_row="0"
+                    android:background="@color/bgcolor"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/button_onclick" />
+
+                <ImageButton
+                    android:id="@+id/bookButton"
+                    android:layout_width="330dp"
+                    android:layout_height="330dp"
+                    android:layout_column="2"
+                    android:layout_gravity="center"
+                    android:layout_row="0"
+                    android:background="@color/bgcolor"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/book_main_icon" />
+
+                <ImageButton
+                    android:id="@+id/restaurantButton"
+                    android:layout_width="330dp"
+                    android:layout_height="330dp"
+                    android:layout_column="0"
+                    android:layout_gravity="center"
+                    android:layout_row="1"
+                    android:background="@color/bgcolor"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/main_restaurant_main_icon" />
+
+                <ImageButton
+                    android:id="@+id/newsButton"
+                    android:layout_width="330dp"
+                    android:layout_height="330dp"
+                    android:layout_column="1"
+                    android:layout_gravity="center"
+                    android:layout_row="1"
+                    android:background="@color/bgcolor"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/main_news_main_icon" />
+
+                <ImageButton
+                    android:id="@+id/balloonButton"
+                    android:layout_width="330dp"
+                    android:layout_height="330dp"
+                    android:layout_column="2"
+                    android:layout_gravity="center"
+                    android:layout_row="1"
+                    android:background="@color/bgcolor"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/main_activity_main_icon" />
+            </GridLayout>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/modeButton"
+            android:layout_width="125dp"
+            android:layout_height="135dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:background="@color/bgcolor" />
+
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

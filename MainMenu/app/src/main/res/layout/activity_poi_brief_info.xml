@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    tools:context="com.ncku.iir.computex.poi.PoiBriefInfoActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="start"
+        android:layout_weight="9.26"
+        android:background="@color/infocolor"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <TextView
+        android:id="@+id/tvPoiBriefInfoDomainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/horizontalScrollView"
+        android:layout_centerHorizontal="true"
+        android:text="推薦清單"
+        android:textSize="33sp" />
+
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/horizontalScrollView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/background_light"
+        app:srcCompat="@drawable/home" />
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar2"
+        android:layout_marginBottom="12dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.ncku.iir.computex.poi.PoiSingleBriefInfo
+                android:id="@+id/poi_brief_info_0"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+            </com.ncku.iir.computex.poi.PoiSingleBriefInfo>
+
+            <com.ncku.iir.computex.poi.PoiSingleBriefInfo
+                android:id="@+id/poi_brief_info_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+            </com.ncku.iir.computex.poi.PoiSingleBriefInfo>
+
+            <com.ncku.iir.computex.poi.PoiSingleBriefInfo
+                android:id="@+id/poi_brief_info_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+            </com.ncku.iir.computex.poi.PoiSingleBriefInfo>
+
+            <com.ncku.iir.computex.poi.PoiSingleBriefInfo
+                android:id="@+id/poi_brief_info_3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+            </com.ncku.iir.computex.poi.PoiSingleBriefInfo>
+
+            <com.ncku.iir.computex.poi.PoiSingleBriefInfo
+                android:id="@+id/poi_brief_info_4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+            </com.ncku.iir.computex.poi.PoiSingleBriefInfo>
+
+            <com.ncku.iir.computex.poi.PoiSingleBriefInfo
+                android:id="@+id/poi_brief_info_5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+            </com.ncku.iir.computex.poi.PoiSingleBriefInfo>
+
+            <com.ncku.iir.computex.poi.PoiSingleBriefInfo
+                android:id="@+id/poi_brief_info_6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+            </com.ncku.iir.computex.poi.PoiSingleBriefInfo>
+
+            <com.ncku.iir.computex.poi.PoiSingleBriefInfo
+                android:id="@+id/poi_brief_info_7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+            </com.ncku.iir.computex.poi.PoiSingleBriefInfo>
+
+            <com.ncku.iir.computex.poi.PoiSingleBriefInfo
+                android:id="@+id/poi_brief_info_8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+            </com.ncku.iir.computex.poi.PoiSingleBriefInfo>
+
+            <com.ncku.iir.computex.poi.PoiSingleBriefInfo
+                android:id="@+id/poi_brief_info_9"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+            </com.ncku.iir.computex.poi.PoiSingleBriefInfo>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/infocolor"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></LinearLayout>
+
+</RelativeLayout>
